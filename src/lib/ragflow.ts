@@ -4,6 +4,8 @@ export type Message = {
   id?: string;
   role: "user" | "assistant";
   content: string;
+  // Set in the browser. RAGFlow does not store this.
+  reaction?: "up" | "down";
 };
 
 export type Session = {

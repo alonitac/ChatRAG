@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { MessageSquare, Plus } from "lucide-react";
 import type { Session } from "@/lib/ragflow";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
   Sidebar,
@@ -33,16 +34,12 @@ export function AppShell({
     <SidebarProvider className="h-dvh max-h-dvh overflow-hidden">
       <Sidebar collapsible="icon">
         <SidebarHeader>
-          <SidebarMenu>
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild tooltip="New chat">
-                <Link href="/">
-                  <Plus />
-                  <span>New chat</span>
-                </Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-          </SidebarMenu>
+          <Button asChild className="w-full justify-start rounded-xl">
+            <Link href="/">
+              <Plus />
+              New chat
+            </Link>
+          </Button>
         </SidebarHeader>
         <SidebarContent>
           <SidebarGroup>

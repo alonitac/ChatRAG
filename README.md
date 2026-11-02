@@ -57,3 +57,5 @@ RAGFlow endpoints used (see the [HTTP API reference](https://ragflow.io/docs/dev
 | `npm run build` | Type check and production build |
 | `npm run start` | Run the production build |
 | `npm run lint` | Check the code with ESLint |
+
+Last reviewed in class.

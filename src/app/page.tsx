@@ -7,7 +7,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
   const sessionId = typeof session === "string" ? session : undefined;
 
   const sessions = await listSessions();
-  const current = sessionId ? await getSession(sessionId) : undefined;
+  const current = sessionId 
 
   return (
     <div className="flex h-screen">
